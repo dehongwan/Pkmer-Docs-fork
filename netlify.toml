@@ -12,3 +12,12 @@
   
   [plugins.inputs]
     enable = false
+
+    [build]
+  command = "npm install && npm run build"
+  
+[[plugins]]
+  package = "netlify-plugin-cypress"
+  [plugins.inputs]
+    record = true  # 如需录制测试
+    build = false  # 是否在构建后运行测试
